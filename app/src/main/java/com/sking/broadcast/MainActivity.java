@@ -42,6 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.re:
 
                 IntentFilter intentFilter = new IntentFilter();
+                intentFilter.addAction(MyReceiver.ACTION1);
                 intentFilter.addAction(MyReceiver.ACTION);
                 if(myReceiver==null)
                     myReceiver = new MyReceiver();

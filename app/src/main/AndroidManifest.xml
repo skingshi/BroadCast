@@ -17,23 +17,7 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".MyReceiver1"
-            android:enabled="true"
-            android:exported="true"
-            >
-            <intent-filter android:priority="9">
-                <action android:name="com.sking.broadcast.ACTION.MyReceiver"></action>
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name=".MyReceiver"
-            android:enabled="true"
-            android:exported="true" >
-            <intent-filter android:priority="10">
-                <action android:name="com.sking.broadcast.ACTION.MyReceiver"></action>
-            </intent-filter>
-        </receiver>
+
     </application>
 
 </manifest>
